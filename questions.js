@@ -14,12 +14,11 @@ function tocamelcase(str) {
      let dasplit = word.split(/[-_]/);
      let casestr = dasplit[0];
 for (let i = 0; i < dasplit.length; i++) {
-    casestr += dasplit[i].charAt(0).toUpperCase() + dasplit[i].slice[1];
+    casestr += dasplit[i].charAt(0).toUpperCase() + dasplit[i];
 }
- casestr.join("")
 return casestr;
   }
-console.log(tocamelcase(word));
+console.log(tocamelcase(word.join("")));
 // tocamelcase(word)
  
 
